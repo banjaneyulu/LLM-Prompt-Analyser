@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LLM Prompt Analyser Results</title>
+</head>
+<body>
+	<h1>LLM Prompt Analyser Results</h1>
+	{% if concepts %}
+		<p>The key concepts in your prompt are:</p>
+		<ul>
+			{% for concept in concepts %}
+				<li>{{ concept }}</li>
+			{% endfor %}
+		</ul>
+	{% else %}
+		<p>No key concepts found.</p>
+	{% endif %}
+</body>
+</html>
